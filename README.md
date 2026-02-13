@@ -23,26 +23,9 @@ The goal was to build a fast, responsive, and well-structured application that r
 
 ---
 
-## ⚙️ Getting Started
-
-To run the project locally:
-
-```bash
-npm install
-npm run dev
-```
-
-Then open:
-
-```
-http://localhost:3000
-```
-
----
-
 ## 🌍 Live Website
 
-👉 (Add your deployed link here)
+👉 (https://my-portfolio-one-gilt-24.vercel.app/)
 
 ---
 
