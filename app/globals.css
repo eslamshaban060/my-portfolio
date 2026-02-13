@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
+/* ========================= */
+/*        DARK (Default)     */
+/* ========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0e1116;
+  --foreground: #f2f2f2;
+
+  --card: #161a21;
+  --card-foreground: #f2f2f2;
+
+  --primary: #f4b942;
+  --primary-foreground: #0e1116;
+
+  --secondary: #1f252f;
+  --secondary-foreground: #d6d6d6;
+
+  --muted: #1a2029;
+  --muted-foreground: #8a8f98;
+
+  --accent: #e09f2d;
+  --accent-foreground: #0e1116;
+
+  --destructive: #ef4444;
+
+  --border: #2a313c;
+  --input: #2a313c;
+  --ring: #f4b942;
+
+  --radius: 0.75rem;
+
+  --gradient-gold: linear-gradient(135deg, #f4b942, #d48a1f);
+  --gradient-card: linear-gradient(145deg, #1a1f27, #12161c);
+
+  --shadow-glow: 0 0 30px rgba(244, 185, 66, 0.15);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ========================= */
+/*          LIGHT            */
+/* ========================= */
+[data-theme="light"] {
+  --background: #fdf8f1;
+  --foreground: #1e2430;
+
+  --card: #f5f1ea;
+  --card-foreground: #1e2430;
+
+  --primary: #f0a500;
+  --primary-foreground: #ffffff;
+
+  --secondary: #ebe6dc;
+  --secondary-foreground: #3a4250;
+
+  --muted: #f0ece4;
+  --muted-foreground: #5b6370;
+
+  --accent: #d48a1f;
+  --accent-foreground: #ffffff;
+
+  --destructive: #dc2626;
+
+  --border: #e2dbcf;
+  --input: #e2dbcf;
+  --ring: #f0a500;
+
+  --gradient-gold: linear-gradient(135deg, #f0a500, #c77c1c);
+  --gradient-card: linear-gradient(145deg, #faf6ef, #f0ebe2);
+
+  --shadow-glow: 0 0 30px rgba(240, 165, 0, 0.12);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* ========================= */
+/*       GLOBAL STYLING      */
+/* ========================= */
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================= */
+/*      Utility Classes      */
+/* ========================= */
+
+.bg-primary {
+  background-color: var(--primary);
+}
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-card {
+  background-color: var(--card);
+}
+.text-card {
+  color: var(--card-foreground);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.text-secondary {
+  color: var(--secondary-foreground);
+}
+
+.border-default {
+  border-color: var(--border);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+.shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.gradient-gold {
+  background: var(--gradient-gold);
+}
+.gradient-card {
+  background: var(--gradient-card);
 }
