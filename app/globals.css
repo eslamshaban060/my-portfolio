@@ -4,7 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root {
+.dark {
   --background: #f5f2ec;
   --foreground: #1a1f2b;
 
@@ -127,7 +127,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-.dark {
+:root {
   --background: #0e1115;
   --foreground: #ede6d8;
 
