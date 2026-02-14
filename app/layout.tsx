@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/Header/Header";
+import { ThemeProvider } from "@/components/theme-provider";
 
 import { Space_Grotesk, Inter, Cairo } from "next/font/google";
 
@@ -71,12 +71,17 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${spaceGrotesk.variable} ${inter.variable} ${cairo.variable}`}
+      suppressHydrationWarning
     >
       <body>
-        <header className="p-4 flex justify-end">
-          <Header />
-        </header>
-        <main>{children}</main>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
