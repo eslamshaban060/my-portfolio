@@ -1,12 +1,16 @@
 import React from "react";
-
+import HeroSection from "@/components/Hero/Hero";
 const HomePage = () => {
   return (
-    <div className="pt-16 h-[200vh]  container">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-      provident. Facere, harum pariatur recusandae rem animi labore
-      perspiciatis? Esse ab at assumenda neque magni, laudantium nemo accusamus
-      eum quisquam doloremque!
+    <div
+      className="pt-16 h-[200vh]  
+    "
+    >
+      {/* Hero Section */}
+      <div>
+        <HeroSection />
+      </div>
+      <div className="h-[100vh] w-full"></div>
     </div>
   );
 };
