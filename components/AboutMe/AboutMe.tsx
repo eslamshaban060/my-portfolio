@@ -1,8 +1,8 @@
 import Text from "../Hero/Text";
 const AboutMe = () => {
   return (
-    <div className="container">
-      <div className=" container w-full  lg:py-10 flex flex-col items-center gap-8 md:flex-row md:justify-between  ">
+    <div className="section-padding">
+      <section className="  w-full   flex flex-col items-center gap-8 md:flex-row md:justify-between  ">
         <div className=" w-full h-full ">
           <Text
             p1="About Me"
@@ -14,7 +14,7 @@ const AboutMe = () => {
           />
         </div>
         <div className=" w-full h-full "></div>
-      </div>
+      </section>
     </div>
   );
 };
