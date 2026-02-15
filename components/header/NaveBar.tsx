@@ -42,7 +42,7 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-6">
-          <a href="#home" className="text-2xl font-bold text-gradient">
+          <a href="#home" className="text-3xl font-bold text-gradient">
             ES<span className="text-foreground">.</span>
           </a>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
                   >
                     {link.label}
                   </a>
@@ -72,20 +72,12 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground relative z-[60]"
+              className="text-foreground  relative z-[60]"
               aria-label="Toggle menu"
             >
               <AnimatePresence mode="wait">
                 {isOpen ? (
-                  <motion.div
-                    key="close"
-                    initial={{ rotate: -90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: 90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <X size={24} />
-                  </motion.div>
+                  <></>
                 ) : (
                   <motion.div
                     key="menu"
@@ -94,7 +86,7 @@ const Navbar = () => {
                     exit={{ rotate: -90, opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Menu size={24} />
+                    <Menu size={34} />
                   </motion.div>
                 )}
               </AnimatePresence>

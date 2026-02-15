@@ -12,10 +12,10 @@ const ModeButton = () => {
         onClick={() => {
           theme === "light" ? setTheme("dark") : setTheme("light");
         }}
-        className="w-9 h-9 rounded-lg dark:rounded-lg border border-border flex items-center justify-center text-muted-foreground hover:text-primary  hover:border-primary transition-colors"
+        className="w-10 h-10 rounded-lg dark:rounded-lg border border-border flex items-center justify-center text-muted-foreground hover:text-primary  hover:border-primary transition-colors"
         aria-label="Toggle theme"
       >
-        {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+        {theme === "dark" ? <Sun size={25} /> : <Moon size={25} />}
       </button>
     </div>
   );
