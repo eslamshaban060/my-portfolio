@@ -4,7 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-.dark {
+:root {
   --background: #f5f2ec;
   --foreground: #1a1f2b;
 
@@ -127,7 +127,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-:root {
+.dark {
   --background: #0e1115;
   --foreground: #ede6d8;
 
@@ -272,8 +272,45 @@
     box-shadow: 0 0 40px hsl(38 90% 55% / 0.4);
   }
 }
+
+/* motion of sidebar on phone  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+}
+
 .container {
   max-width: 1400px;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin: auto;
 }

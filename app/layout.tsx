@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
+import Navbar from "@/components/header/NaveBar";
 import { Space_Grotesk, Inter, Cairo } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
@@ -74,12 +74,11 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class">
+          <header>
+            <Navbar />
+          </header>
+
           {children}
         </ThemeProvider>
       </body>
