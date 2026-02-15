@@ -1,5 +1,5 @@
-import React from "react";
 import HeroSection from "@/components/Hero/Hero";
+import AboutMe from "@/components/AboutMe/AboutMe";
 const HomePage = () => {
   return (
     <div
@@ -10,7 +10,11 @@ const HomePage = () => {
       <div>
         <HeroSection />
       </div>
-      <div className="h-[100vh] w-full"></div>
+
+      {/* About Me Section */}
+      <div>
+        <AboutMe />
+      </div>
     </div>
   );
 };
