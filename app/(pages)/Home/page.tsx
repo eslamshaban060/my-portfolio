@@ -1,5 +1,6 @@
 import HeroSection from "@/components/Hero/Hero";
 import AboutMe from "@/components/AboutMe/AboutMe";
+import SkillsSection from "@/components/Skils/Skils";
 const HomePage = () => {
   return (
     <div
@@ -14,6 +15,11 @@ const HomePage = () => {
       {/* About Me Section */}
       <div>
         <AboutMe />
+      </div>
+
+      {/* Skills Section */}
+      <div>
+        <SkillsSection />
       </div>
     </div>
   );

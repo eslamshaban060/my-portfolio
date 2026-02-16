@@ -1,10 +1,24 @@
+"use client";
 import Text from "../Hero/Text";
 import Cards from "./Cards";
+import { motion } from "framer-motion";
+
+// framer motion
+const TranslatFromLeft = {
+  hidden: { x: "-100px" },
+  visable: { x: "0px", transition: { duration: 0.7 } },
+};
 const AboutMe = () => {
   return (
     <section className="section-padding">
       <div className="  w-full flex  gap-5 flex-col items-center  lg:flex-row  ">
-        <div className=" w-full h-full ">
+        {/* left */}
+        <motion.div
+          variants={TranslatFromLeft}
+          initial="hidden"
+          animate="visable"
+          className=" w-full h-full "
+        >
           <Text
             p1="About Me"
             title1="Turning ideas into"
@@ -13,7 +27,9 @@ const AboutMe = () => {
             p2="I'm Eslam Shaban — a passionate Frontend Developer and final-year Communications and Electronics Engineering student at Minia University. I specialize in building modern, responsive web applications with React, Next.js, and TypeScript."
             p3="Though I'm about to graduate in 2026, I've already shipped real freelance projects and built a growing portfolio of personal work. I love clean code, thoughtful UI/UX, and creating experiences that users enjoy."
           />
-        </div>
+        </motion.div>
+
+        {/* Right  */}
         <div className=" w-full h-full flex">
           <Cards />
         </div>
