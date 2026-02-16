@@ -1,8 +1,9 @@
 import Text from "../Hero/Text";
+import Cards from "./Cards";
 const AboutMe = () => {
   return (
-    <div className="section-padding">
-      <section className="  w-full   flex flex-col items-center gap-8 md:flex-row md:justify-between  ">
+    <section className="section-padding">
+      <div className="  w-full flex  gap-5 flex-col items-center  lg:flex-row  ">
         <div className=" w-full h-full ">
           <Text
             p1="About Me"
@@ -13,9 +14,11 @@ const AboutMe = () => {
             p3="Though I'm about to graduate in 2026, I've already shipped real freelance projects and built a growing portfolio of personal work. I love clean code, thoughtful UI/UX, and creating experiences that users enjoy."
           />
         </div>
-        <div className=" w-full h-full "></div>
-      </section>
-    </div>
+        <div className=" w-full h-full flex">
+          <Cards />
+        </div>
+      </div>
+    </section>
   );
 };
 

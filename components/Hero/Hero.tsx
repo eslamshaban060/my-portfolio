@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center section-padding overflow-hidden"
+      className=" min-h-screen flex items-center section-padding overflow-hidden"
     >
       {/* Particles Background */}
       <div className="absolute max-h-screen inset-0 bg-background/30 z-[1]">
@@ -39,7 +39,7 @@ const HeroSection = () => {
           >
             <div className="relative">
               <motion.div
-                className="w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border-2 border-border glow"
+                className="w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 ridues2xl overflow-hidden border-2 border-border glow"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 />
               </motion.div>
               <motion.div
-                className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-primary rounded-2xl -z-10"
+                className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-primary ridues2xl -z-10"
                 animate={{ rotate: [0, 3, -3, 0] }}
                 transition={{
                   duration: 6,
@@ -59,7 +59,7 @@ const HeroSection = () => {
                 }}
               />
               <motion.div
-                className="absolute -top-4 -left-4 w-16 h-16 border border-primary/30 rounded-xl -z-10"
+                className="absolute -top-4 -left-4 w-16 h-16 border border-primary/30 riduesxl -z-10"
                 animate={{ y: [0, -8, 0] }}
                 transition={{
                   duration: 4,

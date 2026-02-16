@@ -309,10 +309,16 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: auto;
+}
+@media (max-width: 600px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 body {
   font-family: "Space Grotesk", "Cairo", sans-serif;
@@ -325,4 +331,14 @@ h4,
 h5,
 h6 {
   font-family: "Space Grotesk", "Cairo", sans-serif;
+}
+
+.ridueslg {
+  border-radius: 8px;
+}
+.riduesxl {
+  border-radius: 12px;
+}
+.ridues2xl {
+  border-radius: 16px;
 }

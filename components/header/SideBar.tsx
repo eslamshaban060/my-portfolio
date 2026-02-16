@@ -100,12 +100,12 @@ const SideBar = ({ isOpen, setIsOpen, navLinks }: SideBarProps) => {
                   animation: `slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.1}s both`,
                 }}
               >
-                <div className="relative overflow-hidden rounded-2xl">
+                <div className="relative overflow-hidden ridues2xl">
                   {/* Gradient background on hover */}
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                   {/* Animated border */}
-                  <div className="absolute inset-0 border border-border group-hover:border-primary/30 rounded-2xl transition-all duration-500" />
+                  <div className="absolute inset-0 border border-border group-hover:border-primary/30 ridues2xl transition-all duration-500" />
 
                   {/* Content */}
                   <div className="relative px-6 py-5 flex items-center justify-between">
@@ -157,7 +157,7 @@ const SideBar = ({ isOpen, setIsOpen, navLinks }: SideBarProps) => {
               href="/cv.pdf"
               download
               onClick={() => setIsOpen(false)}
-              className="group relative block overflow-hidden rounded-2xl"
+              className="group relative block overflow-hidden ridues2xl"
             >
               {/* Animated gradient background */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary bg-[length:200%_100%] animate-gradient" />
@@ -188,7 +188,7 @@ const SideBar = ({ isOpen, setIsOpen, navLinks }: SideBarProps) => {
               </div>
 
               {/* Border glow */}
-              <div className="absolute inset-0 rounded-2xl ring-1 ring-primary/20 group-hover:ring-primary/40 transition-all duration-500" />
+              <div className="absolute inset-0 ridues2xl ring-1 ring-primary/20 group-hover:ring-primary/40 transition-all duration-500" />
             </a>
 
             {/* Footer */}

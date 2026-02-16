@@ -60,21 +60,21 @@ const Text = ({ p1, title1, title12, section, p2, p3 }: TextType) => {
         >
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 sm:px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity text-sm sm:text-base"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 sm:px-6 py-3 ridueslg font-medium hover:opacity-90 transition-opacity text-sm sm:text-base"
           >
             View Projects
           </a>
           <a
             href="/resume.pdf"
             download
-            className="inline-flex items-center gap-2 border border-primary text-primary px-5 sm:px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-colors text-sm sm:text-base"
+            className="inline-flex items-center gap-2 border border-primary text-primary px-5 sm:px-6 py-3 ridueslg font-medium hover:bg-primary hover:text-primary-foreground transition-colors text-sm sm:text-base"
           >
             <Download size={16} />
             Download CV
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 border border-border px-5 sm:px-6 py-3 rounded-lg font-medium text-foreground hover:border-primary hover:text-primary transition-colors text-sm sm:text-base"
+            className="inline-flex items-center gap-2 border border-border px-5 sm:px-6 py-3 ridueslg font-medium text-foreground hover:border-primary hover:text-primary transition-colors text-sm sm:text-base"
           >
             Contact Me
           </a>
