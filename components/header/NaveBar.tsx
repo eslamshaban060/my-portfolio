@@ -4,19 +4,8 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ModeButton from "./ModeButton";
 import SideBar from "./SideBar";
-
-// navlinks types
-type NavLink = {
-  label: string;
-  href: string;
-};
-
-const navLinks: NavLink[] = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
-
+import { navLinks } from "@/constants/enmus";
+import Link from "./../Link/Link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -42,21 +31,21 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-6">
-          <a href="#home" className="text-3xl font-bold text-gradient">
+          <Link href="#home" className="text-3xl font-bold text-gradient">
             ES<span className="text-foreground">.</span>
-          </a>
+          </Link>
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-8">
             <ul className="flex items-center gap-8">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

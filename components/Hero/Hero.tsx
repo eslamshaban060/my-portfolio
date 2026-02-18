@@ -6,10 +6,7 @@ import Image from "next/image";
 import Text from "./Text";
 const HeroSection = () => {
   return (
-    <div
-      id="home"
-      className=" min-h-screen flex items-center relative section-padding overflow-hidden"
-    >
+    <div className=" min-h-screen flex items-center relative section-padding overflow-hidden">
       {/* Particles Background */}
       <div className="  bg-background/30">
         <ParticlesBackground />

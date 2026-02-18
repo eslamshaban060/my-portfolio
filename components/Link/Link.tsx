@@ -26,7 +26,7 @@ const Link: FC<CustomLinkProps> = ({ children, href, ...rest }) => {
       linkElement?.removeEventListener("mouseover", setPrefetchListener);
       linkElement?.removeEventListener("mouseleave", removePrefetchListener);
     };
-  }, [prefetching]);
+  }, []);
   return (
     <NextLink href={href} ref={linkRef} prefetch={prefetching} {...rest}>
       {children}

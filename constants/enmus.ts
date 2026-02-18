@@ -1,6 +1,16 @@
 // about section
 import { GraduationCap, Briefcase, Rocket } from "lucide-react";
+import { NavLink } from "./types";
 
+// nav links
+export const navLinks: NavLink[] = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skils" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
+
+// about me cards
 export const CardsData = [
   {
     icon: GraduationCap,

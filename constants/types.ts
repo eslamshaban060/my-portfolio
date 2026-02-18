@@ -7,3 +7,9 @@ export interface TextType {
   p2: string;
   p3: string;
 }
+
+// navlinks types
+export interface NavLink {
+  label: string;
+  href: string;
+}
