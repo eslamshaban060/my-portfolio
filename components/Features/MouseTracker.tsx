@@ -2,12 +2,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-// types
-type MousePosition = {
-  x: number;
-  y: number;
-};
-
 const MouseTracker = () => {
   const [postion, setPostion] = useState<{ x: number; y: number }>({
     x: 0,

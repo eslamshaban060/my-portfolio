@@ -67,7 +67,7 @@ const SkillsSection = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <section id="skills" className="section-padding bg-card/30 overflow-hidden">
+    <div id="skills" className="section-padding bg-card/30 overflow-hidden">
       <div className="container mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -147,7 +147,7 @@ const SkillsSection = () => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

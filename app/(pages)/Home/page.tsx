@@ -11,24 +11,24 @@ const HomePage = () => {
     "
     >
       {/* Hero Section */}
-      <div>
+      <main>
         <HeroSection />
-      </div>
+      </main>
 
       {/* About Me Section */}
-      <div>
+      <section>
         <AboutMe />
-      </div>
+      </section>
 
       {/* Skills Section */}
-      <div>
+      <section>
         <SkillsSection />
-      </div>
+      </section>
 
       {/* Projects Section */}
-      <div>
+      <section>
         <Projects />
-      </div>
+      </section>
       {/* Feture of mouse tracker */}
       <div>
         <MouseTracker />

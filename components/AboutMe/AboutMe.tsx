@@ -10,7 +10,7 @@ const TranslatFromLeft = {
 };
 const AboutMe = () => {
   return (
-    <section className="section-padding">
+    <div className="section-padding">
       <div className="  w-full flex  gap-5 flex-col items-center  lg:flex-row  ">
         {/* left */}
         <motion.div
@@ -34,7 +34,7 @@ const AboutMe = () => {
           <Cards />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

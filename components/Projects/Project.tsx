@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <section className="section-padding  overflow-hidden">
+    <div className="section-padding  overflow-hidden">
       {/*  title  */}
       <div className="container mx-auto">
         <motion.div
@@ -27,7 +27,7 @@ const Projects = () => {
       <div>
         <CardImage />
       </div>
-    </section>
+    </div>
   );
 };
 

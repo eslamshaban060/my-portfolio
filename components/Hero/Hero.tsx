@@ -6,7 +6,7 @@ import Image from "next/image";
 import Text from "./Text";
 const HeroSection = () => {
   return (
-    <section
+    <div
       id="home"
       className=" min-h-screen flex items-center section-padding overflow-hidden"
     >
@@ -86,7 +86,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 
