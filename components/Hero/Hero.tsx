@@ -8,10 +8,10 @@ const HeroSection = () => {
   return (
     <div
       id="home"
-      className=" min-h-screen flex items-center section-padding overflow-hidden"
+      className=" min-h-screen flex items-center relative section-padding overflow-hidden"
     >
       {/* Particles Background */}
-      <div className="absolute max-h-screen inset-0 bg-background/30 z-[1]">
+      <div className="  bg-background/30">
         <ParticlesBackground />
       </div>
       <div className=" mx-auto relative z-10">
