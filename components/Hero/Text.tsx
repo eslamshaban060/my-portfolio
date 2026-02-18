@@ -1,15 +1,8 @@
 "use client";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { motion } from "framer-motion";
+import { TextType } from "@/constants/types";
 
-interface TextType {
-  p1: string;
-  title1: string;
-  title12: string;
-  section: string;
-  p2: string;
-  p3: string;
-}
 const Text = ({ p1, title1, title12, section, p2, p3 }: TextType) => {
   return (
     <div>

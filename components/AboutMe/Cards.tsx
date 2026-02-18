@@ -1,6 +1,6 @@
 "use client";
-import { GraduationCap, Briefcase, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
+import { CardsData } from "@/constants/enmus";
 
 // motion
 const container = {
@@ -12,26 +12,6 @@ const items = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const CardsData = [
-  {
-    icon: GraduationCap,
-    title: "Engineering Student",
-    description:
-      "Final-year student at Faculty of Engineering, Minia University — Communications & Electronics Engineering, Class of 2026.",
-  },
-  {
-    icon: Briefcase,
-    title: "Freelance Experience",
-    description:
-      "Completed 3+ real-world freelance projects, delivering production-ready React & Next.js applications for clients.",
-  },
-  {
-    icon: Rocket,
-    title: "Self-Driven Builder",
-    description:
-      "Continuously building personal projects and exploring modern web technologies to sharpen my skills and stay ahead.",
-  },
-];
 const Cards = () => {
   return (
     <motion.div
