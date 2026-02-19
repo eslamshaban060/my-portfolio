@@ -11,12 +11,12 @@ const HomePage = () => {
     "
     >
       {/* Hero Section */}
-      <main id="#home">
+      <main id="home">
         <HeroSection />
       </main>
 
       {/* About Me Section */}
-      <section id="#about">
+      <section id="about">
         <AboutMe />
       </section>
 
@@ -26,7 +26,7 @@ const HomePage = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="#projects">
+      <section id="projects">
         <Projects />
       </section>
       {/* Feture of mouse tracker */}
