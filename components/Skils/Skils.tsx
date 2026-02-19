@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { skills } from "@/constants/enmus";
+import Image from "next/image";
 
 const duplicatedSkills = [...skills, ...skills];
 
@@ -45,11 +46,13 @@ const SkillsSection = () => {
             {duplicatedSkills.map((skill, i) => (
               <div key={`row1-${i}`} className="flex-shrink-0 group">
                 <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-2xl card-glass flex flex-col items-center justify-center gap-2 sm:gap-3 hover:border-primary/40 transition-all duration-300 group-hover:scale-105">
-                  <img
+                  <Image
                     src={skill.icon}
                     alt={skill.name}
                     className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110"
                     loading="lazy"
+                    width={1}
+                    height={1}
                   />
                   <span className="text-[10px] sm:text-xs font-medium text-muted-foreground group-hover:text-primary transition-colors">
                     {skill.name}
@@ -74,11 +77,13 @@ const SkillsSection = () => {
             {[...duplicatedSkills].reverse().map((skill, i) => (
               <div key={`row2-${i}`} className="flex-shrink-0 group">
                 <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-2xl card-glass flex flex-col items-center justify-center gap-2 sm:gap-3 hover:border-primary/40 transition-all duration-300 group-hover:scale-105">
-                  <img
+                  <Image
                     src={skill.icon}
                     alt={skill.name}
                     className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110"
                     loading="lazy"
+                    width={1}
+                    height={1}
                   />
                   <span className="text-[10px] sm:text-xs font-medium text-muted-foreground group-hover:text-primary transition-colors">
                     {skill.name}

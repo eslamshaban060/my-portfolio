@@ -44,6 +44,7 @@ const HeroSection = () => {
                   src={profileAvatar}
                   alt="Eslam Shaban"
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </motion.div>
               <motion.div

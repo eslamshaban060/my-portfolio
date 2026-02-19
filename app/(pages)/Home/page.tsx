@@ -6,14 +6,11 @@ import MouseTracker from "@/components/Features/MouseTracker";
 
 const HomePage = () => {
   return (
-    <div
-      className="pt-16 h-[200vh]  
-    "
-    >
+    <main className="pt-16 h-[200vh] ">
       {/* Hero Section */}
-      <main id="home">
+      <section id="home">
         <HeroSection />
-      </main>
+      </section>
 
       {/* About Me Section */}
       <section id="about">
@@ -33,7 +30,7 @@ const HomePage = () => {
       <div>
         <MouseTracker />
       </div>
-    </div>
+    </main>
   );
 };
 
