@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="  bg-background/30">
         <ParticlesBackground />
       </div>
-      <div className=" mx-auto relative z-10">
+      <div className=" container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
           <div>

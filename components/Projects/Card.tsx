@@ -14,12 +14,12 @@ import { ExternalLink, Github } from "lucide-react";
 import Link from "../Link/Link";
 export const CardImage: React.FC<ProjectType> = ({ data }) => {
   return (
-    <Card className="relative mx-auto card-glass  w-full max-w-full pt-0">
-      <div className="absolute h-75 w-full inset-0 z-30 aspect-video rounded-2xl bg-black/35" />
+    <Card className="relative mx-auto card-glass hover:border-primary/40  w-full max-w-full pt-0">
+      <div className="absolute h-50 w-full inset-0 z-30 aspect-video rounded-2xl bg-black/35" />
       <Image
         src={data.image}
         alt="Event cover"
-        className="relative h-75 z-20 aspect-video w-full object-cover  rounded-t-2xl"
+        className="relative h-50 z-20 aspect-video w-full object-cover  rounded-t-2xl"
         width={300}
         height={300}
       />
@@ -43,7 +43,7 @@ export const CardImage: React.FC<ProjectType> = ({ data }) => {
       </div>
 
       <CardFooter>
-        <div className="flex gap-3 pt-2">
+        <div className="flex gap-3 ">
           <Link
             href="#"
             className="text-muted-foreground hover:text-primary transition-colors"

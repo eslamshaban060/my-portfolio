@@ -33,7 +33,7 @@ const Projects = () => {
       </div>
 
       {/* projects cards */}
-      <div className=" grid   grid-cols-1  gap-y-8 md:gap-x-8 md:grid-cols-2">
+      <div className=" grid  container  grid-cols-1  gap-y-8 md:gap-x-8 md:grid-cols-2">
         {projects.slice(0, visibleCount).map((prject, id) => (
           <div
             className="group  rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300"

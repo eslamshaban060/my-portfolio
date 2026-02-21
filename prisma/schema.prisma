@@ -17,4 +17,11 @@ model Project {
   title       String
   description String
   createdAt   DateTime @default(now())
+  skills      Skill[]
+}
+
+model Skill {
+  id       String    @id @default(uuid())
+  name     String    @unique
+  projects Project[]
 }

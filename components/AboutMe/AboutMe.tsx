@@ -11,7 +11,7 @@ const TranslatFromLeft = {
 const AboutMe = () => {
   return (
     <div className="section-padding">
-      <div className="  w-full flex  gap-5 flex-col items-center  lg:flex-row  ">
+      <div className="  container w-full flex  gap-5 flex-col items-center  lg:flex-row  ">
         {/* left */}
         <motion.div
           variants={TranslatFromLeft}

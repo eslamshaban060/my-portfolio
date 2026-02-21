@@ -4,7 +4,7 @@ import { NavLink } from "./types";
 import { ProjectType } from "./types";
 // nav links
 export const navLinks: NavLink[] = [
-  { label: "About", href: "#about" },
+  // { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },

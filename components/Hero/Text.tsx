@@ -30,7 +30,7 @@ const Text = ({ p1, title1, title12, section, p2, p3 }: TextType) => {
           {title1} <span className="text-gradient">{title12}</span>
         </MotionHeading>
         <motion.p
-          className="text-base sm:text-lg text-muted-foreground max-w-lg font-body leading-relaxed"
+          className={`${section === "about" ? "text-muted-foreground font-body leading-relaxed" : "text-base sm:text-lg text-muted-foreground max-w-lg font-body leading-relaxed"}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
@@ -38,7 +38,7 @@ const Text = ({ p1, title1, title12, section, p2, p3 }: TextType) => {
           {p2}
         </motion.p>
         <motion.p
-          className="text-base sm:text-lg text-muted-foreground max-w-lg font-body leading-relaxed"
+          className={`${section === "about" ? "text-muted-foreground font-body leading-relaxed" : "text-base sm:text-lg text-muted-foreground max-w-lg font-body leading-relaxed"}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
