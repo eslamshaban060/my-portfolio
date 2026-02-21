@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { skills } from "@/constants/enmus";
+import { skills } from "@/constants/data";
 import Image from "next/image";
 
 const duplicatedSkills = [...skills, ...skills];

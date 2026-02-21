@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ModeButton from "./ModeButton";
 import SideBar from "./SideBar";
-import { navLinks } from "@/constants/enmus";
+import { navLinks } from "@/constants/data";
 import Link from "./../Link/Link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

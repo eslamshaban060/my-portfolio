@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { TextType } from "@/constants/types";
 
 const Text = ({ p1, title1, title12, section, p2, p3 }: TextType) => {
+  const MotionHeading = section === "about" ? motion.h2 : motion.h1;
   return (
     <div>
       <motion.div
@@ -20,14 +21,14 @@ const Text = ({ p1, title1, title12, section, p2, p3 }: TextType) => {
         >
           {p1}
         </motion.p>
-        <motion.h1
+        <MotionHeading
           className={`${section === "about" ? "text-4xl max-w-[570px] md:text-5xl font-bold" : "text-4xl sm:text-5xl md:text-7xl font-bold"} leading-tight`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           {title1} <span className="text-gradient">{title12}</span>
-        </motion.h1>
+        </MotionHeading>
         <motion.p
           className="text-base sm:text-lg text-muted-foreground max-w-lg font-body leading-relaxed"
           initial={{ opacity: 0 }}

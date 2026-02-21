@@ -1,7 +1,7 @@
 // about section
 import { GraduationCap, Briefcase, Rocket } from "lucide-react";
 import { NavLink } from "./types";
-
+import { ProjectType } from "./types";
 // nav links
 export const navLinks: NavLink[] = [
   { label: "About", href: "#about" },
@@ -88,5 +88,46 @@ export const skills = [
   {
     name: "Vite",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+  },
+];
+
+//  projects data
+
+export const projects: ProjectType[] = [
+  {
+    title: "E-Commerce Platform",
+    description:
+      "A full-featured online store built with Next.js, Stripe integration, and responsive design. Supports RTL for Arabic markets.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+    color: "from-primary/20 to-accent/10",
+    image:
+      "https://cdn.dribbble.com/userupload/27552292/file/original-e2e8e565bf4e1392cfea7e3537b28447.jpg",
+  },
+  {
+    title: "Dashboard Analytics",
+    description:
+      "Real-time analytics dashboard with interactive charts, data filtering, and dark mode support.",
+    tech: ["React", "Recharts", "React Query", "Tailwind CSS"],
+    color: "from-accent/20 to-primary/10",
+    image:
+      "https://cdn.dribbble.com/userupload/27552292/file/original-e2e8e565bf4e1392cfea7e3537b28447.jpg",
+  },
+  {
+    title: "Task Management App",
+    description:
+      "Collaborative task manager with drag-and-drop, real-time updates, and team features.",
+    tech: ["React", "TypeScript", "Zustand", "Supabase"],
+    color: "from-primary/15 to-secondary/20",
+    image:
+      "https://cdn.dribbble.com/userupload/27552292/file/original-e2e8e565bf4e1392cfea7e3537b28447.jpg",
+  },
+  {
+    title: "Portfolio Generator",
+    description:
+      "A tool that helps developers create stunning portfolios with customizable templates and themes.",
+    tech: ["Next.js", "Framer Motion", "MDX", "Tailwind CSS"],
+    color: "from-accent/15 to-primary/15",
+    image:
+      "https://cdn.dribbble.com/userupload/27552292/file/original-e2e8e565bf4e1392cfea7e3537b28447.jpg",
   },
 ];

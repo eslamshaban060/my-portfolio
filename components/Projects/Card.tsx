@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardAction,
@@ -8,29 +7,59 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
-export function CardImage() {
+import React from "react";
+import { ProjectType } from "@/constants/types";
+import Image from "next/image";
+import { ExternalLink, Github } from "lucide-react";
+import Link from "../Link/Link";
+export const CardImage: React.FC<ProjectType> = ({ data }) => {
   return (
-    <Card className="relative mx-auto  w-full max-w-sm pt-0">
-      <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-      <img
-        src="https://avatar.vercel.sh/shadcn1"
+    <Card className="relative mx-auto card-glass  w-full max-w-full pt-0">
+      <div className="absolute h-75 w-full inset-0 z-30 aspect-video rounded-2xl bg-black/35" />
+      <Image
+        src={data.image}
         alt="Event cover"
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+        className="relative h-75 z-20 aspect-video w-full object-cover  rounded-t-2xl"
+        width={300}
+        height={300}
       />
       <CardHeader>
-        <CardAction>
-          <Badge variant="secondary">Featured</Badge>
-        </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
-        <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
+        <CardTitle className="text-xl font-bold group-hover:text-primary transition-color">
+          {data.title}
+        </CardTitle>
+        <CardDescription className="text-muted-foreground text-sm font-body leading-relaxed">
+          {data.description}
         </CardDescription>
       </CardHeader>
+      <div className="flex px-5 flex-wrap gap-2">
+        {data.tech.map((t: string, id: number) => (
+          <CardAction
+            className=" px-2 py-1 text-xs rounded-full bg-secondary text-secondary-foreground"
+            key={id}
+          >
+            <Badge variant="secondary">{t}</Badge>
+          </CardAction>
+        ))}
+      </div>
+
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+        <div className="flex gap-3 pt-2">
+          <Link
+            href="#"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label="View code"
+          >
+            <Github size={18} />
+          </Link>
+          <Link
+            href="#"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label="View live"
+          >
+            <ExternalLink size={18} />
+          </Link>
+        </div>
       </CardFooter>
     </Card>
   );
-}
+};

@@ -13,3 +13,11 @@ export interface NavLink {
   label: string;
   href: string;
 }
+// project types
+export interface ProjectType {
+  title: string;
+  description: string;
+  tech: string[];
+  color: string;
+  image: string;
+}

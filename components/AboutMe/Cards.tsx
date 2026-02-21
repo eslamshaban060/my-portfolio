@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { CardsData } from "@/constants/enmus";
+import { CardsData } from "@/constants/data";
 
 // motion
 const container = {
@@ -24,7 +24,7 @@ const Cards = () => {
       {CardsData.map((item, id: number) => (
         <motion.div variants={items} whileHover={{ x: 6 }} key={id}>
           <div className="card-glass riduesxl px-5 py-6 flex items-start gap-4 border-4 hover:border-primary/40 transition-colors cursor-default">
-            <div className="w-12 h-12 ridueslg bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-12 h-12 ridueslg  flex items-center justify-center flex-shrink-0">
               <item.icon className="text-primary " size="42" />
             </div>
             <div>

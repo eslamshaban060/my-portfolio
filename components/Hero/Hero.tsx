@@ -45,6 +45,7 @@ const HeroSection = () => {
                   alt="Eslam Shaban"
                   className="w-full h-full object-cover"
                   loading="eager"
+                  priority
                 />
               </motion.div>
               <motion.div
