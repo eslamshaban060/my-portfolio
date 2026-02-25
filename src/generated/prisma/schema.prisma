@@ -19,10 +19,3 @@ model Project {
   description String
   createdAt   DateTime @default(now())
 }
-
-model Project2 {
-  id          String   @id @default(uuid())
-  title       String
-  description String
-  createdAt   DateTime @default(now())
-}
