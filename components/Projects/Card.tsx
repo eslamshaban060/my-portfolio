@@ -12,7 +12,7 @@ import { ProjectType } from "@/constants/types";
 import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
 import Link from "../Link/Link";
-export const CardImage: React.FC<ProjectType> = ({ data }) => {
+export const CardImage: React.FC<ProjectType> = (data) => {
   return (
     <Card className="relative mx-auto card-glass hover:border-primary/40  w-full max-w-full pt-0">
       <div className="absolute h-50 w-full inset-0 z-30 aspect-video rounded-2xl bg-black/35" />
