@@ -3,6 +3,7 @@ import AboutMe from "@/components/AboutMe/AboutMe";
 import SkillsSection from "@/components/Skils/Skils";
 import Projects from "@/components/Projects/Project";
 import MouseTracker from "@/components/Features/MouseTracker";
+import Connect from "@/components/Connect/Connect";
 
 const HomePage = () => {
   return (
@@ -26,6 +27,12 @@ const HomePage = () => {
       <section id="projects">
         <Projects />
       </section>
+
+      {/* Connect Section */}
+      <section id="contact">
+        <Connect />
+      </section>
+
       {/* Feture of mouse tracker */}
       <div>
         <MouseTracker />

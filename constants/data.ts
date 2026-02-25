@@ -1,7 +1,15 @@
 // about section
-import { GraduationCap, Briefcase, Rocket } from "lucide-react";
+import {
+  GraduationCap,
+  Briefcase,
+  Rocket,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import { NavLink } from "./types";
 import { ProjectType } from "./types";
+
 // nav links
 export const navLinks: NavLink[] = [
   // { label: "About", href: "#about" },
@@ -130,4 +138,11 @@ export const projects: ProjectType[] = [
     image:
       "https://cdn.dribbble.com/userupload/27552292/file/original-e2e8e565bf4e1392cfea7e3537b28447.jpg",
   },
+];
+
+// contact data
+export const ContactData = [
+  { icon: Mail, label: "eslamshaban060@gmail.com" },
+  { icon: Phone, label: "+20 100 6407 387" },
+  { icon: MapPin, label: "AL - Minya , Egypt" },
 ];
