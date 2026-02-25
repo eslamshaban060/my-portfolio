@@ -1,4 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+// import { PrismaClient } from "@prisma/client";
+import Prisma from "@prisma/client";
+
 import { Pool } from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 
@@ -8,6 +10,9 @@ const pool = new Pool({
 
 const adapter = new PrismaPg(pool);
 
-export const prisma = new PrismaClient({
+// export const prisma = new PrismaClient({
+//   adapter,
+// });
+export const prisma = new Prisma.PrismaClient({
   adapter,
 });
