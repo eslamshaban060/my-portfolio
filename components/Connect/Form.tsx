@@ -14,7 +14,7 @@ const Form = () => {
       alert(JSON.stringify(values, null, 2));
     },
   });
-  const inputClasses = `w-full px-4 py-3 rounded-lg bg-secondary border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors font-body 
+  const inputClasses = `w-full px-4 py-3 rounded-lg bg-secondary border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary border-border transition-colors font-body 
     `;
   return (
     <div>
