@@ -1,3 +1,4 @@
+"use client";
 import HeroSection from "@/components/Hero/Hero";
 import AboutMe from "@/components/AboutMe/AboutMe";
 import SkillsSection from "@/components/Skils/Skils";
@@ -6,6 +7,7 @@ import MouseTracker from "@/components/Features/MouseTracker";
 import Connect from "@/components/Connect/Connect";
 import FeaturedProject from "@/components/FeaturedProject/FeaturedProject";
 import Experience from "@/components/Experience/Experience";
+import FloatingActions from "@/components/FloatingActions";
 
 const HomePage = () => {
   return (
@@ -48,6 +50,11 @@ const HomePage = () => {
       {/* Feture of mouse tracker */}
       <div>
         <MouseTracker />
+      </div>
+
+      {/* FloatingActions */}
+      <div>
+        <FloatingActions />
       </div>
     </main>
   );
