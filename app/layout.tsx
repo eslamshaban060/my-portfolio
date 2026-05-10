@@ -2,25 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/header/NaveBar";
-import { Space_Grotesk, Inter, Cairo } from "next/font/google";
-const spaceGrotesk = Space_Grotesk({
+
+import { JetBrains_Mono, Work_Sans } from "next/font/google";
+
+const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-space-grotesk",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-jetbrains-mono",
   preload: true,
 });
 
-const inter = Inter({
+const workSans = Work_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-inter",
-  preload: true,
-});
-
-const cairo = Cairo({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cairo",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-work-sans",
   preload: true,
 });
 
@@ -72,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} ${cairo.variable}`}
+      className={`${jetBrainsMono.variable} ${workSans.variable}`}
       suppressHydrationWarning
     >
       <body>

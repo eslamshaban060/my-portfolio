@@ -5,6 +5,7 @@ import Projects from "@/components/Projects/Project";
 import MouseTracker from "@/components/Features/MouseTracker";
 import Connect from "@/components/Connect/Connect";
 import FeaturedProject from "@/components/FeaturedProject/FeaturedProject";
+import Experience from "@/components/Experience/Experience";
 
 const HomePage = () => {
   return (
@@ -18,9 +19,15 @@ const HomePage = () => {
       <section>
         <FeaturedProject />
       </section>
+
       {/* About Me Section */}
       <section id="about">
         <AboutMe />
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience">
+        <Experience />
       </section>
 
       {/* Skills Section */}
