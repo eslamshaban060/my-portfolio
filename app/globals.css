@@ -4,53 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root {
-  --background: #f5f2ec;
-  --foreground: #1a1f2b;
-
-  --card: #eeeae3;
-  --card-foreground: #1a1f2b;
-
-  --popover: #ffffff;
-  --popover-foreground: #1a1f2b;
-
-  --primary: #f2a900;
-  --primary-foreground: #ffffff;
-
-  --secondary: #e6e1d8;
-  --secondary-foreground: #3d4452;
-
-  --muted: #ece7df;
-  --muted-foreground: #5c6370;
-
-  --accent: #c97f15;
-  --accent-foreground: #ffffff;
-
-  --destructive: #e53e3e;
-  --destructive-foreground: #ffffff;
-
-  --border: #ddd6c9;
-  --input: #ddd6c9;
-  --ring: #f2a900;
-
-  --radius: 0.75rem;
-
-  --sidebar-background: #eeeae3;
-  --sidebar-foreground: #1a1f2b;
-  --sidebar-primary: #f2a900;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e6e1d8;
-  --sidebar-accent-foreground: #3d4452;
-  --sidebar-border: #ddd6c9;
-  --sidebar-ring: #f2a900;
-
-  --gradient-gold: linear-gradient(135deg, #f2a900, #c97f15);
-  --gradient-card: linear-gradient(145deg, #f3efe8, #e6e1d8);
-
-  --shadow-glow: 0 0 30px rgba(242, 169, 0, 0.12);
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
-}
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
 
@@ -129,116 +82,192 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+:root {
+  --radius: 0.875rem;
+
+  --background: oklch(0.985 0.01 180);
+  --foreground: oklch(0.2 0.04 230);
+
+  --card: oklch(0.99 0.008 180);
+  --card-foreground: oklch(0.2 0.04 230);
+
+  --popover: oklch(0.99 0.008 180);
+  --popover-foreground: oklch(0.2 0.04 230);
+
+  --primary: oklch(0.78 0.16 168);
+  --primary-foreground: oklch(0.18 0.04 230);
+
+  --secondary: oklch(0.95 0.015 180);
+  --secondary-foreground: oklch(0.2 0.04 230);
+
+  --muted: oklch(0.94 0.012 180);
+  --muted-foreground: oklch(0.5 0.025 200);
+
+  --accent: oklch(0.86 0.17 165);
+  --accent-foreground: oklch(0.18 0.04 230);
+
+  --destructive: oklch(0.6 0.22 27);
+  --destructive-foreground: oklch(0.985 0 0);
+
+  --border: oklch(0.9 0.015 200);
+  --input: oklch(0.9 0.015 200);
+  --ring: oklch(0.78 0.16 168);
+
+  --surface: oklch(0.97 0.01 180);
+  --surface-foreground: oklch(0.2 0.04 230);
+}
+
 .dark {
-  --background: #0e1115;
-  --foreground: #ede6d8;
-
-  --card: #141820;
-  --card-foreground: #ede6d8;
-
-  --popover: #141820;
-  --popover-foreground: #ede6d8;
-
-  --primary: #f4b400;
-  --primary-foreground: #0e1115;
-
-  --secondary: #202631;
-  --secondary-foreground: #e6dcc7;
-
-  --muted: #1b212b;
-  --muted-foreground: #6e7785;
-
-  --accent: #d18a1a;
-  --accent-foreground: #0e1115;
-
-  --destructive: #f05a5a;
-  --destructive-foreground: #f8fafc;
-
-  --border: #262d38;
-  --input: #262d38;
-  --ring: #f4b400;
-
-  --radius: 0.75rem;
-
-  --sidebar-background: #141820;
-  --sidebar-foreground: #ede6d8;
-  --sidebar-primary: #f4b400;
-  --sidebar-primary-foreground: #0e1115;
-  --sidebar-accent: #202631;
-  --sidebar-accent-foreground: #e6dcc7;
-  --sidebar-border: #262d38;
-  --sidebar-ring: #f4b400;
-
-  --gradient-gold: linear-gradient(135deg, #f4b400, #d18a1a);
-  --gradient-card: linear-gradient(145deg, #1a202a, #0f141c);
-
-  --shadow-glow: 0 0 30px rgba(244, 180, 0, 0.15);
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --background: oklch(0.18 0.04 235);
+  --foreground: oklch(0.97 0.012 180);
+  --card: oklch(0.22 0.04 235);
+  --card-foreground: oklch(0.97 0.012 180);
+  --popover: oklch(0.22 0.04 235);
+  --popover-foreground: oklch(0.97 0.012 180);
+  --primary: oklch(0.82 0.18 168);
+  --primary-foreground: oklch(0.16 0.04 235);
+  --secondary: oklch(0.26 0.04 235);
+  --secondary-foreground: oklch(0.97 0.012 180);
+  --muted: oklch(0.26 0.04 235);
+  --muted-foreground: oklch(0.72 0.025 200);
+  --accent: oklch(0.86 0.18 165);
+  --accent-foreground: oklch(0.16 0.04 235);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.82 0.18 168);
+  --surface: oklch(0.2 0.04 235);
+  --surface-foreground: oklch(0.97 0.012 180);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
-    @apply border-border outline-ring/50;
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground;
-    @apply bg-background text-foreground;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      color-mix(in oklab, var(--color-primary) 30%, transparent) 1px,
+      transparent 0
+    );
+    background-size: 40px 40px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  code,
+  pre,
+  kbd {
+    font-family: var(--font-display);
   }
 }
 
 @layer utilities {
+  .container-x {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 1.75rem;
+    height: 2px;
+    background: var(--color-primary);
+    display: inline-block;
+  }
+  .marquee-track {
+    animation: marquee 40s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* gradient text + glow tuned for mint */
   .text-gradient {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(38 90% 55%), hsl(28 85% 50%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(135deg, #2dd4a8, #73ffb8);
   }
-
-  .border-gradient {
-    border-image: linear-gradient(135deg, hsl(38 90% 55%), hsl(28 85% 45%)) 1;
-  }
-
   .glow {
-    box-shadow: var(--shadow-glow);
+    box-shadow:
+      0 0 30px rgba(45, 212, 168, 0.25),
+      0 0 80px rgba(45, 212, 168, 0.15);
   }
-
   .card-glass {
-    background: var(--gradient-card);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--border);
-  }
-
-  .light .card-glass {
     background: linear-gradient(
       145deg,
-      hsl(0 0% 100% / 0.8),
-      hsl(40 20% 96% / 0.6)
+      rgba(255, 255, 255, 0.85),
+      rgba(240, 252, 248, 0.6)
     );
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border);
   }
-
-  .text-gradient {
-    background-image: linear-gradient(135deg, hsl(38 90% 45%), hsl(28 85% 35%));
-  }
-
-  img[alt="GitHub"] {
-    filter: invert(1);
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
+  .dark .card-glass {
+    background: linear-gradient(
+      145deg,
+      rgba(20, 36, 56, 0.7),
+      rgba(13, 27, 42, 0.55)
+    );
+    border: 1px solid rgba(115, 255, 184, 0.08);
   }
 
   .section-padding {
-    @apply px-6 py-20 md:px-12 lg:px-24 xl:px-32;
+    padding: 5rem 1.5rem;
   }
-}
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+  @media (min-width: 1280px) {
+    .section-padding {
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+  }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
+  /* Aliases for legacy radius classes used across components */
+  .ridueslg {
+    border-radius: 0.5rem;
   }
-  50% {
-    transform: translateY(-10px);
+  .riduesxl {
+    border-radius: 0.75rem;
+  }
+  .ridues2xl {
+    border-radius: 1rem;
   }
 }
 
@@ -252,38 +281,6 @@
     transform: translateY(0);
   }
 }
-
-@keyframes slide-in-left {
-  from {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes pulse-glow {
-  0%,
-  100% {
-    box-shadow: 0 0 20px hsl(38 90% 55% / 0.2);
-  }
-  50% {
-    box-shadow: 0 0 40px hsl(38 90% 55% / 0.4);
-  }
-}
-
-/* motion of sidebar on phone  */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -294,7 +291,6 @@
     transform: translateX(0);
   }
 }
-
 @keyframes gradient {
   0%,
   100% {
@@ -304,42 +300,6 @@
     background-position: 100% 50%;
   }
 }
-
 .animate-gradient {
   animation: gradient 3s ease infinite;
-}
-
-.container {
-  max-width: 1400px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin: auto;
-}
-@media (max-width: 600px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-body {
-  font-family: "Space Grotesk", "Cairo", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Space Grotesk", "Cairo", sans-serif;
-}
-
-.ridueslg {
-  border-radius: 8px;
-}
-.riduesxl {
-  border-radius: 12px;
-}
-.ridues2xl {
-  border-radius: 16px;
 }
