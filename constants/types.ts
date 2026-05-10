@@ -1,4 +1,3 @@
-// types of text in hero and about me sections
 export interface TextType {
   p1: string;
   title1: string;
@@ -8,16 +7,44 @@ export interface TextType {
   p3: string;
 }
 
-// navlinks types
 export interface NavLink {
   label: string;
   href: string;
 }
-// project types
+
 export interface ProjectType {
   title: string;
   description: string;
   tech: string[];
   color: string;
   image: string;
+  featured?: boolean;
+  github?: string;
+  live?: string;
+}
+
+export interface ExperienceType {
+  role: string;
+  company: string;
+  period: string;
+  location?: string;
+  description: string;
+  tech: string[];
+}
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+  cover: string;
+  tags: string[];
+  content: string;
+}
+
+export interface StatItem {
+  label: string;
+  value: number;
+  suffix?: string;
 }

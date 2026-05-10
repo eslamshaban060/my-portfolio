@@ -4,6 +4,7 @@ import SkillsSection from "@/components/Skils/Skils";
 import Projects from "@/components/Projects/Project";
 import MouseTracker from "@/components/Features/MouseTracker";
 import Connect from "@/components/Connect/Connect";
+import FeaturedProject from "@/components/FeaturedProject/FeaturedProject";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,10 @@ const HomePage = () => {
         <HeroSection />
       </section>
 
+      {/* Featured Project Section */}
+      <section>
+        <FeaturedProject />
+      </section>
       {/* About Me Section */}
       <section id="about">
         <AboutMe />

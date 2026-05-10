@@ -1,4 +1,3 @@
-// about section
 import {
   GraduationCap,
   Briefcase,
@@ -7,18 +6,16 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import { NavLink } from "./types";
-import { ProjectType } from "./types";
+import type { NavLink, ProjectType, ExperienceType } from "./types";
 
-// nav links
 export const navLinks: NavLink[] = [
-  // { label: "About", href: "#about" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
-// about me cards
 export const CardsData = [
   {
     icon: GraduationCap,
@@ -40,66 +37,21 @@ export const CardsData = [
   },
 ];
 
+const dev = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/";
 export const skills = [
-  {
-    name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-  },
-  {
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  },
-  {
-    name: "JavaScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    name: "HTML5",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  },
-  {
-    name: "CSS3",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  },
-  {
-    name: "Git",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-  },
-  {
-    name: "GitHub",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-  },
-  {
-    name: "Redux",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-  },
-  {
-    name: "Figma",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  },
-  //   {
-  //     name: "Sass",
-  //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-  //   },
-  //   {
-  //     name: "Node.js",
-  //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  //   },
-  {
-    name: "Vite",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
-  },
+  { name: "React", icon: dev + "react/react-original.svg" },
+  { name: "Next.js", icon: dev + "nextjs/nextjs-original.svg" },
+  { name: "TypeScript", icon: dev + "typescript/typescript-original.svg" },
+  { name: "JavaScript", icon: dev + "javascript/javascript-original.svg" },
+  { name: "Tailwind CSS", icon: dev + "tailwindcss/tailwindcss-original.svg" },
+  { name: "HTML5", icon: dev + "html5/html5-original.svg" },
+  { name: "CSS3", icon: dev + "css3/css3-original.svg" },
+  { name: "Git", icon: dev + "git/git-original.svg" },
+  { name: "GitHub", icon: dev + "github/github-original.svg" },
+  { name: "Redux", icon: dev + "redux/redux-original.svg" },
+  { name: "Figma", icon: dev + "figma/figma-original.svg" },
+  { name: "Vite", icon: dev + "vitejs/vitejs-original.svg" },
 ];
-
-//  projects data
 
 export const projects: ProjectType[] = [
   {
@@ -110,6 +62,9 @@ export const projects: ProjectType[] = [
     color: "from-primary/20 to-accent/10",
     image:
       "https://cdn.dribbble.com/userupload/27552292/file/original-e2e8e565bf4e1392cfea7e3537b28447.jpg",
+    featured: true,
+    github: "https://github.com/eslamshaban060",
+    live: "#",
   },
   {
     title: "Dashboard Analytics",
@@ -140,9 +95,38 @@ export const projects: ProjectType[] = [
   },
 ];
 
-// contact data
 export const ContactData = [
   { icon: Mail, label: "eslamshaban060@gmail.com" },
   { icon: Phone, label: "+20 100 6407 387" },
   { icon: MapPin, label: "AL - Minya , Egypt" },
+];
+
+export const experiences: ExperienceType[] = [
+  {
+    role: "Freelance Frontend Developer",
+    company: "Self-Employed",
+    period: "2024 — Present",
+    location: "Remote",
+    description:
+      "Delivering production-ready React & Next.js apps for international clients, focusing on performance, accessibility, and clean architecture.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    role: "Frontend Developer Intern",
+    company: "Tech Startup",
+    period: "2023 — 2024",
+    location: "Minya, Egypt",
+    description:
+      "Built reusable UI component libraries, integrated REST APIs, and improved the design system used across multiple internal dashboards.",
+    tech: ["React", "Redux", "TypeScript", "Storybook"],
+  },
+  {
+    role: "Communications & Electronics Engineering",
+    company: "Minia University",
+    period: "2021 — 2026",
+    location: "Minya, Egypt",
+    description:
+      "Final-year engineering student combining a strong technical foundation with hands-on web development and real client work on the side.",
+    tech: ["DSP", "Electronics", "Algorithms", "Math"],
+  },
 ];
