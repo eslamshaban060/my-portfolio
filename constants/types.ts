@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface TextType {
   p1: string;
   title1: string;
@@ -17,7 +19,7 @@ export interface ProjectType {
   description: string;
   tech: string[];
   color: string;
-  image: string;
+  image: string | StaticImageData;
   featured?: boolean;
   github?: string;
   live?: string;
