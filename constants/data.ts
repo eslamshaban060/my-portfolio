@@ -7,6 +7,7 @@ import {
   Phone,
 } from "lucide-react";
 import type { NavLink, ProjectType, ExperienceType } from "./types";
+import solarProjectImage from "@/assets/solar-project.png";
 
 export const navLinks: NavLink[] = [
   { label: "About", href: "#about" },
@@ -55,6 +56,18 @@ export const skills = [
 
 export const projects: ProjectType[] = [
   {
+    title: "Smart Solar Power Management System",
+    description:
+      "Graduation project — a full-stack, real-time monitoring & operations platform for solar power systems. Unifies IoT telemetry, AI insights, team collaboration, and enterprise-grade auth in a bilingual (AR/EN) web app with role-based dashboards.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Realtime", "AI"],
+    color: "from-primary/20 to-accent/10",
+    image: solarProjectImage,
+    featured: true,
+    github:
+      "https://github.com/eslamshaban060/Smart-Solar-Power-Management-System-My-graduation",
+    live: "https://solar-management-swart.vercel.app/",
+  },
+  {
     title: "E-Commerce Platform",
     description:
       "A full-featured online store built with Next.js, Stripe integration, and responsive design. Supports RTL for Arabic markets.",
@@ -62,7 +75,6 @@ export const projects: ProjectType[] = [
     color: "from-primary/20 to-accent/10",
     image:
       "https://cdn.dribbble.com/userupload/27552292/file/original-e2e8e565bf4e1392cfea7e3537b28447.jpg",
-    featured: true,
     github: "https://github.com/eslamshaban060",
     live: "#",
   },
