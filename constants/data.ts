@@ -7,7 +7,6 @@ import {
   Phone,
 } from "lucide-react";
 import type { NavLink, ProjectType, ExperienceType } from "./types";
-import solarProjectImage from "@/assets/solar-project.png";
 
 export const navLinks: NavLink[] = [
   { label: "About", href: "#about" },
@@ -61,7 +60,8 @@ export const projects: ProjectType[] = [
       "Graduation project — a full-stack, real-time monitoring & operations platform for solar power systems. Unifies IoT telemetry, AI insights, team collaboration, and enterprise-grade auth in a bilingual (AR/EN) web app with role-based dashboards.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Realtime", "AI"],
     color: "from-primary/20 to-accent/10",
-    image: solarProjectImage,
+    image:
+      "https://my-code-canvas-10.lovable.app/assets/solar-project-DvBEKR2T.png",
     featured: true,
     github:
       "https://github.com/eslamshaban060/Smart-Solar-Power-Management-System-My-graduation",
